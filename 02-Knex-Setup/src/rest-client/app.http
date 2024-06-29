@@ -1,0 +1,29 @@
+### 00 Test
+GET http://localhost:5000/
+
+### 01 Get All Users
+GET http://localhost:5000/users
+
+### 02 Create Single User
+POST http://localhost:5000/users
+Content-Type: application/json
+ 
+{
+  "username": "Ande Praveen",
+  "email": "example11@gmail.com",
+  "password": "hashedPassword"
+}
+
+### 03 Update Single User
+PUT http://localhost:5000/users/3
+Content-Type: application/json
+
+{
+  "username": "username Updated",
+  "email": "updatedExample@gmail.com",
+  "password": "UpdatedHashedPassword"
+}
+
+### 04 Delete Single User
+DELETE http://localhost:5000/users/5
+
