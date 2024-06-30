@@ -22,3 +22,5 @@
 * It can work with many databases like `PostgreSQL`, `MySQL`, `SQLite`, and more. You can use it to make complex queries, manage tables, and handle transactions.    
 * For real-world applications, use Knex within Node.js to interact with your databases securely and with full functionality.
 </details>
+
+---

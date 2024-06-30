@@ -20,7 +20,7 @@ app.use(express.json());
 async function connectDatabase() {
     try {
         await db.raw(`SELECT 1`);
-        console.log('Successfully Database  Connected');
+        console.log('Successfully Database Connected');
     } catch (error) {
         console.error('Error in Database Connection:', error);
     }
@@ -34,8 +34,6 @@ connectDatabase()
       })
 })
 .catch((err) => console.log(err));
-
-
 
 /* -----> Handling HTTP Requests <----- */
 

@@ -1,22 +1,25 @@
 {
   "name": "02-knex-setup",
   "version": "1.0.0",
-  "description": "* `npm init -y`\r * `git init`\r * create `.gitignore` file\r * Third Party Packages\r     - `npm install -D nodemon` Automatic Server Restart\r     - `npm install -D typescript` Run __.ts__ files\r     - `tsc --init` Create ts configuration file\r     - `npm install -D ts-node` Recognize the __.ts__ files\r     - `npm install -D @types/express` Run the express on typescript  \r     - `npm install express` Server-side web framework\r     - `npm install dot-env`\r * typeorm setup\r     - `npm install typeorm`\r     - `npm install reflect-metadata`\r     - `npm install mysql2`\r * create data-sourse configuration file \r * create database on mysql",
+  "description": "* Install NodeJS\r * create `index.js`\r * Write some code in `index.js`\r * Start the Application : `node index.js`",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "migrate": "knex migrate:latest",
+    "seed": "knex seed:run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "dotenv": "^16.4.5",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.4"
   },
   "dependencies": {
     "express": "^4.19.2",
     "knex": "^3.1.0",
-    "mysql2": "^3.9.7"
+    "mysql2": "^3.10.1",
+    "sqlite3": "^5.1.7"
   }
 }

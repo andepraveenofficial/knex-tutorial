@@ -17,7 +17,6 @@ console.log(customersPath);
 const organizationsPath = path.join(__dirname, "./assets/organizations.csv");
 console.log(organizationsPath);
 
-
 const proposalsPath = path.join(__dirname, "./assets/proposals.csv");
 console.log(proposalsPath)
 
